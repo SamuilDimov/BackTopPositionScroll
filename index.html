@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Solve Scroll</title>
 </head>
+
 <body>
     <div class="container">
         <div class="card">
@@ -15,11 +17,34 @@
                 <h1 class="card-title">Louis Vuiton Jacket</h1>
                 <span class="card-price">1350£</span>
                 <p class="card-description">Louis Vuiton Overpriced Alligator skin Jacket</p>
-                <a href="https://eu.louisvuitton.com/eng-e1/products/short-hooded-parka-nvprod4020154v/1AAUPS" class="card-button">Buy Now!</a>
+                <a href="https://eu.louisvuitton.com/eng-e1/products/short-hooded-parka-nvprod4020154v/1AAUPS"
+                    class="card-button">Buy Now!</a>
             </div>
         </div>
-        
-
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images/image2.png" class="card-img">
+            <div class="card-data">
+                <h1 class="card-title">Louis Vuiton Jacket</h1>
+                <span class="card-price">2000£</span>
+                <p class="card-description">Louis Vuiton Overpriced Dinosaur skin Jacket</p>
+                <a href="https://eu.louisvuitton.com/eng-e1/products/short-hooded-parka-nvprod4020154v/1AAUPS"
+                    class="card-button">Buy Now!</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="images/image3.png" class="card-img">
+            <div class="card-data">
+                <h1 class="card-title">Louis Vuiton Jacket</h1>
+                <span class="card-price">2340£</span>
+                <p class="card-description">Louis Vuiton Overpriced Lizard skin Jacket</p>
+                <a href="https://eu.louisvuitton.com/eng-e1/products/short-hooded-parka-nvprod4020154v/1AAUPS"
+                    class="card-button">Buy Now!</a>
+            </div>
+        </div>
         
     </div>
     <div class="container">
@@ -28,29 +53,26 @@
             <div class="card-data">
                 <h1 class="card-title">Louis Vuiton Jacket</h1>
                 <span class="card-price">1350£</span>
-                <p class="card-description">Louis Vuiton Overpriced Alligator skin Jacket</p>
-                <a href="https://eu.louisvuitton.com/eng-e1/products/short-hooded-parka-nvprod4020154v/1AAUPS" class="card-button">Buy Now!</a>
+                <p class="card-description">Louis Vuiton Overpriced Racoon skin Jacket</p>
+                <a href="https://eu.louisvuitton.com/eng-e1/products/short-hooded-parka-nvprod4020154v/1AAUPS"
+                    class="card-button">Buy Now!</a>
             </div>
         </div>
         
-
-        
     </div>
-    <div class="container">
-        <div class="card">
-            <img src="images/image1.png" class="card-img">
-            <div class="card-data">
-                <h1 class="card-title">Louis Vuiton Jacket</h1>
-                <span class="card-price">1350£</span>
-                <p class="card-description">Louis Vuiton Overpriced Alligator skin Jacket</p>
-                <a href="https://eu.louisvuitton.com/eng-e1/products/short-hooded-parka-nvprod4020154v/1AAUPS" class="card-button">Buy Now!</a>
-            </div>
-        </div>
-        
+    <script>
+        //using a jQuery to go back to scroll position
+        var target = $(".container").offset().top;
 
-        
-    </div>
-    
-    
+
+        var interval = setInterval(function () {
+            if ($(window).scrollTop() >= target) {
+                alert("made it!");
+                clearInterval(interval);
+            }
+        }, 250);
+    </script>
+
 </body>
+
 </html>
